@@ -94,6 +94,13 @@ main {
     border-top-right-radius: 10px;
 }
 
+.weather-div-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .weather-city-info-div {
     min-height: 5rem;
     display: flex;
