@@ -57,6 +57,11 @@
         }
         let jsonData = getJSONData(url);
         jsonData.then(parseData)
+            .catch((error) => {
+                alert("Error in getting weather for this city: " + cityName);
+                location.reload();
+                return;
+            })
     }
 
     function getWeather(e) {
