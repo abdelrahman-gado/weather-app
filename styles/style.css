@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    display: flex;
+    min-height: 3rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: rgb(77, 75, 75);
+}
+
+.div-inp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem;
+    gap: 1rem;
+    border-bottom: 2px solid rgb(34, 33, 33);
+}
+
+.city-input {
+    min-height: 2rem;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    color: white;
+    border-bottom: 4px solid black;
+    font-size: 18px;
+}
+
+.city-input::placeholder {
+    color: white;
+}
+
+.city-input:focus {
+    outline: none;
+    border-bottom-color: #6da6ed;
+    color: #6da6ed
+}
+
+.city-input:focus::placeholder {
+    color: transparent;
+}
+
+.city-btn {
+    padding: 0.6rem;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(34, 33, 33);
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+}
+
+.city-btn:hover {
+    background-color: rgb(48, 48, 48);
+    border: 1px solid rgb(34, 33, 33);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.city-weather-div {
+    min-width: 20rem;
+    min-height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.city-info-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: blueviolet;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.weather-div-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-city-info-div {
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+    background-color: rgb(96, 92, 92);
+}
+
+.special-weather-info {
+    background-color: rgb(77, 75, 75);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.change-temp-unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+    padding: 1rem;
+}

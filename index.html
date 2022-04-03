@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h1>Weather App</h1>
+    </nav>
+
+    <div class="div-inp">
+        <input type="text" class="city-input" id="city-inp" placeholder="Enter Your City">
+        <input type="button" class="city-btn" id="search-btn" value="GO">
+    </div>
+
+
+    <main>
+        <div class="city-weather-div">
+            <div class="city-info-div">
+                <h1></h1>
+                <div class="weather-div-icon">
+                    <img src="#" alt="weather-icon">
+                    <p></p>
+                </div>
+                <p class="date"></p>
+            </div>
+            <div class="weather-city-info-div">
+                <h1><span class="temp"></span></h1>
+                <div class="special-weather-info">
+                    <p id="humidity-para">Humidity: <span></span>%</p>
+                    <p id="pressure-para">Pressure: <span></span>hPa</p>
+                </div>
+            </div>
+            <div class="change-temp-unit">
+                <input type="checkbox" id="show-celsius">
+                <label for="show-celsius">Show in Celsius</label>
+            </div>
+        </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
